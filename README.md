@@ -19,8 +19,18 @@
 
 打开`auto_choice_editor.js`文件，修改以下配置项：
 ```
+/**
+ * 第三方编辑器脚本文件名
+ *
+ * normal    普通笔记
+ * markdown  Markdown笔记
+ */
 var editorScriptFile = {
     normal  :"baidu_editor.js",
     markdown:"md_editor.js"
 }
 ```
+
+第三方编辑器推荐：
+- 普通笔记：[Wiz.UEditor](https://github.com/akof1314/Wiz.UEditor "Wiz.UEditor") 一个基于 UEditor 构建的为知笔记编辑器插件
+- Markdown笔记：[Wiz.Editor.md](https://github.com/akof1314/Wiz.Editor.md "Wiz.Editor.md") 一个基于 Editor.md 构建的为知笔记 Markdown 编辑器插件

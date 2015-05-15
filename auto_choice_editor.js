@@ -1,3 +1,9 @@
+/**
+ * 第三方编辑器脚本文件名
+ *
+ * normal    普通笔记
+ * markdown  Markdown笔记
+ */
 var editorScriptFile = {
     normal  :"baidu_editor.js",
     markdown:"md_editor.js"
@@ -39,18 +45,18 @@ function autoRunScriptFile () {
         } else{
             objApp.RunScriptFile(objApp.GetPluginPathByScriptFileName(file) + file, "js");
         };
-    }
+    };
 
     function getObjCommon() {
-    if (objCommon == null) {
-        try {
-            objCommon = objApp.CreateWizObject("WizKMControls.WizCommonUI");
-        }
-        catch (err) {
-        }
+        if (objCommon == null) {
+            try {
+                objCommon = objApp.CreateWizObject("WizKMControls.WizCommonUI");
+            }
+            catch (err) {
+            }
+        };
+        return objCommon;
     };
-    return objCommon;
-};
 };
 
 autoRunScriptFile();
